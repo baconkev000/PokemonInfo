@@ -1,7 +1,7 @@
 export default defineNuxtConfig({
-  devtools: { enabled: true },
+  spaLoadingTemplate: false,
   app: {
-    pageTransition: { name: 'fade', mode: 'out-in' }
+    pageTransition: { name: 'fade', mode: 'out-in' },
   },
   typescript: {
     strict: true
