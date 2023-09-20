@@ -7,7 +7,7 @@ describe('Test Get Pokemon API', () => {
   test('it should fetch 1 pokemon', async () => {
     // get fixture data and create resolved mock response of that data
     const _fetch = vi.fn()
-    const mockResponse = import('../pokemon.json')
+    const mockResponse = import('../../fixtures/pokemon.json')
     _fetch.mockResolvedValue(createFetchResponse(mockResponse))
     // use api to mock fetch a pokemon and verify response
     const pokemon = await _fetch('/api/pokemon?limit=1')

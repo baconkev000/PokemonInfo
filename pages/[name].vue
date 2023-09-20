@@ -3,7 +3,7 @@
     <h1>{{ pokeName }}</h1>
     <div class="detail-wrapper">
       <div class="img-wrapper">
-        <img :src="pokemon.sprites.other.home.front_default" :alt="`${pokeName}'s thumbnail'`">
+        <img class="poke-img" :src="pokemon.sprites.other.home.front_default" :alt="`${pokeName}'s thumbnail'`">
       </div>
       <div class="detail">
         <div class="detail-info">
@@ -43,6 +43,9 @@ const pokeName = capitolize(name.toString())
 </script>
 
 <style scoped>
+.poke-img{
+    filter: drop-shadow(20px 5px 4px #7e7e9f);
+}
 .img-wrapper{
     background-color: aquamarine;
 }
